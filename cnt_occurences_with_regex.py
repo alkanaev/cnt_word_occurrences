@@ -6,7 +6,7 @@ import re
 # Return the number of occurrences of the passed word (case insensitive) in text
 # using regular expressions
 
-def count_occurrences_in_text(word, text):
+def count_occurrences_in_text(word, text) -> int:
     p1 = "(?<![a-z])((?<!')|(?<=''))"
     p2 = "(?![a-z])((?!')|(?=''))"
     pattern = p1 + word + p2
